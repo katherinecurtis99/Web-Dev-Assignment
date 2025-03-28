@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Business Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
 </head>
 
     
@@ -21,8 +23,9 @@
 
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Business Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,28 +51,29 @@
     <section id="portfolio" class="container my-5 text-center">
         <h2 class="text-center">Our Work</h2>
         <div class="row d-flex flex-column align-items-center">
-            <div class="col-md-6">
-                <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0">
                     <img src="https://placehold.co/300" class="card-img-top" alt="Project 1">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Project 1</h5>
                         <p class="card-text">A cool idea we worked on.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0">
                     <img src="https://placehold.co/300" class="card-img-top" alt="Project 2">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Project 2</h5>
                         <p class="card-text">Something we made for a fun project.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0">
                     <img src="https://placehold.co/300" class="card-img-top" alt="Project 3">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title">Project 3</h5>
                         <p class="card-text">An idea that still needs work!</p>
                     </div>
@@ -107,10 +111,35 @@
         </div>
     </section>
 
+
+    <section class="container my-5">
+        <h2 class="text-center">What our Clients Say</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="text-center p-5">
+                        <p class="lead">"Great work! Highly recommend."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="text-center p-5">
+                        <p class="lead">"Professional and on time!"</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
     
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Business Portfolio | Made by Katherine Curtis</p>
+        <p>&copy; 2025 Business Portfolio | <a href="#" class="text-light">Privacy Policy</a> | Made by Katherine Curtis</p>
     </footer>
 
     
